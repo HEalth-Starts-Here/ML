@@ -1,5 +1,14 @@
 hesh_ml
 ==============================
+Setup steps:  (from root) 
+~~~
+python -m venv .venv
+source .venv/bin/activate
+cd ml_project
+pip install -r requirements.txt
+~~~
+
+
 
 A short description of the project.
 
