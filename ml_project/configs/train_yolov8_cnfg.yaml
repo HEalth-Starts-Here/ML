@@ -1,0 +1,29 @@
+input_data_path: "data/raw/"
+output_model_path: "models/model.pkl"
+metric_path: "models/metrics.json"
+train_dataframe_path: "data/raw/predict_dataset.csv"
+
+split_params:
+  test_size: 0.2
+  random_state: 5
+train_params:
+  model_type: "GradientBoostingClassifier"
+  random_state: 5
+  n_iters: 100
+  scaler: "StandartScaler"
+feature_params:
+  numerical_features:
+    - "age"
+    - "sex"
+    - "cp"
+    - "trestbps"
+    - "chol"
+    - "fbs"
+    - "restecg"
+    - "thalach"
+    - "exang"
+    - "oldpeak"
+    - "slope"
+    - 'ca'
+    - 'thal'
+  target_col: "condition"
