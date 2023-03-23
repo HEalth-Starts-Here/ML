@@ -6,7 +6,7 @@ from entities.train_params import (
     TrainingPipelineParams
 )
 
-def train_model(
+def define_model(
     train_params: TrainingParams,
     pretrained_model_path: str
 ):
@@ -25,5 +25,26 @@ def train_model(
     else:
         raise NotImplementedError()
 
-
     return model
+
+def train_model(
+    model,
+    train_params: TrainingParams        
+):
+    if train_params.model_type == "yolov8":
+        model.train(
+
+        )
+
+
+        model.train(
+            data=f'{DATASET_PATH}/data.yaml'  # data path
+            ,epochs=1
+            ,imgsz=512
+            ,optimizer="AdamW"
+            ,batch=16 
+            ,seed=567 
+            ,project=f"{TRAIN_RESULT_PATH}"  # save directory path  
+            ,name="train"  # spam default "train" "train2" "train3" ...
+            ,device=None
+        )

@@ -19,7 +19,6 @@ class TrainingParams:
     name:       Optional[str]   = "train"         # save dir
     device:     Optional[str]   = None  
 
-    scaler: Optional[str] = None
 
 @dataclass()
 class TrainingPipelineParams:
