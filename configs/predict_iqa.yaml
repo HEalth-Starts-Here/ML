@@ -1,0 +1,3 @@
+model_path: "models/koniq_pretrained.pkl"
+image_path: "/mnt/c/Datasets/DermNet/train/Acne and Rosacea Photos/07Acne081101.jpg"
+num_parts: 10

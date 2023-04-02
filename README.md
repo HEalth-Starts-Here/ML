@@ -62,4 +62,16 @@ Project Organization
 
 --------
 
+Referencies
+--------
+```
+@InProceedings{Su_2020_CVPR,
+author = {Su, Shaolin and Yan, Qingsen and Zhu, Yu and Zhang, Cheng and Ge, Xin and Sun, Jinqiu and Zhang, Yanning},
+title = {Blindly Assess Image Quality in the Wild Guided by a Self-Adaptive Hyper Network},
+booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2020}
+}
+```
+
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>

@@ -6,7 +6,7 @@ from entities.train_params import (
     read_train_pipeline_params,
     TrainingPipelineParams
 )
-from models.train_model import (
+from src.models.train_yolo import (
     define_model,
     train_model
 )
