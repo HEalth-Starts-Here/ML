@@ -7,6 +7,17 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ~~~
 
+For summarize text feature:
+~~~
+python -m spacy download ru_core_news_sm
+~~~
+
+Run nlp summatization predict:
+~~~
+python setup.py build
+python setup.py install
+nlp_sum_predict configs/predict_nlp_sum_cfg.yaml
+~~~
 
 
 A short description of the project.

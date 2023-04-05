@@ -2,7 +2,19 @@
 import click
 import logging
 from pathlib import Path
-from dotenv import find_dotenv, load_dotenv
+# from dotenv import find_dotenv, load_dotenv
+
+
+def read_data(path: str) -> str:
+    with open(path, "r") as fd:
+        data = fd.read()
+
+    return data
+
+def save_data(path: str, doc, limit):
+    with open(path, "w") as fd:
+        for sent in doc._.textrank.summary(limit_sentences=limit):
+            fd.write(str(sent))
 
 
 @click.command()

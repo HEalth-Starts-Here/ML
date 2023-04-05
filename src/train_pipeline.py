@@ -13,8 +13,6 @@ from models.train_model import (
 from entities.logger import setup_default_logger
 
 
-
-
 logger = setup_default_logger(
     name="train",
     log_file="train.log",

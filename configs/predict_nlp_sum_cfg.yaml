@@ -1,0 +1,5 @@
+model_path: "models/sum_txt.pkl"
+text_path:  "data/raw/predict_txt.txt"
+nlp_sum_type: "ru_core_news_sm"
+limit_sentence: 2
+output_result_path: "data/predict/predict.txt"

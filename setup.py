@@ -1,3 +1,4 @@
+from importlib.metadata import entry_points
 from setuptools import find_packages, setup
 
 setup(
@@ -6,5 +7,10 @@ setup(
     version='0.1.0',
     description='A short description of the project.',
     author='HESH',
+    entry_points={
+        "console_scripts": [
+            "nlp_sum_predict = src.predict_pipeline:main"
+        ]
+    },
     license='',
 )
